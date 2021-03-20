@@ -11,9 +11,59 @@
   <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-  
-
-
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <form id="search-form">
+          <input type="text" name="search-field" id="search-field" class="search-field" placeholder="Enter city" autocomplete="off">
+          <input type="submit" value="Search" id="search-btn" class="search-btn">
+        </form>
+        <h1 id="city">
+          Placeholder city
+        </h1>
+        <p>
+          Updated: 
+          <span id="time" class="time">
+            Day time
+          </span>
+          <br />
+          <span id="description" class="description">
+            Placeholder description
+          </span>
+        </p>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h2>
+              <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="icon" id="weather-icon" class="weather-icon">
+              <span id="temp" class="temp">
+                10
+              </span>
+              <span class="units">
+                <a href="#" id="celsius">°C</a> |
+                <a href="#" id="fahrenheit">°F</a>
+              </span>
+            </h2>
+          </div>
+          <div class="col-4">
+            <ul class="more-info">
+              <li>
+                Precipitation <span id="precipitation">0</span>
+              </li>
+              <li>
+                Humidity <span id="humidity">0</span>%
+              </li>
+              <li>
+                Wind <span id="wind-speed">0</span>km/h 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="footer">
+      <a href="https://github.com/sarahkentwell/test" target="_blank" rel="noopener noreferrer">Open-Source Code</a> by Sarah Kentwell
+    </p>
+  </div>
   <script src="src/script.js"></script>
 </body>
 </html>
